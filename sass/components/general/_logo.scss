@@ -1,0 +1,25 @@
+.logo {
+  &__link {
+    text-decoration: none;
+    color: $mainTextColor;
+  }
+
+  &--top {
+    display: block;
+
+    font-family: 'Post-No-Bills-Jaffna-SemiBold';
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 1.5;
+  }
+
+  &--bot {
+    display: block;
+
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.12em;
+  }
+}
