@@ -1,0 +1,95 @@
+@font-face {
+  font-family: 'Post-No-Bills-Jaffna-SemiBold';
+  src: url("Post-No-Bills-Jaffna-SemiBold.ttf.woff") format("woff"), url("Post-No-Bills-Jaffna-SemiBold.ttf.svg#Post-No-Bills-Jaffna-SemiBold") format("svg"), url("Post-No-Bills-Jaffna-SemiBold.ttf.eot"), url("Post-No-Bills-Jaffna-SemiBold.ttf.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* raleway-regular - latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/raleway-v18-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/raleway-v18-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/raleway-v18-latin-regular.woff2") format("woff2"), url("../fonts/raleway-v18-latin-regular.woff") format("woff"), url("../fonts/raleway-v18-latin-regular.ttf") format("truetype"), url("../fonts/raleway-v18-latin-regular.svg#Raleway") format("svg");
+  /* Legacy iOS */
+}
+
+/* raleway-700 - latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/raleway-v18-latin-700.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/raleway-v18-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/raleway-v18-latin-700.woff2") format("woff2"), url("../fonts/raleway-v18-latin-700.woff") format("woff"), url("../fonts/raleway-v18-latin-700.ttf") format("truetype"), url("../fonts/raleway-v18-latin-700.svg#Raleway") format("svg");
+  /* Legacy iOS */
+}
+
+/* playfair-display-regular - latin_cyrillic */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/playfair-display-v21-latin_cyrillic-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/playfair-display-v21-latin_cyrillic-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/playfair-display-v21-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/playfair-display-v21-latin_cyrillic-regular.woff") format("woff"), url("../fonts/playfair-display-v21-latin_cyrillic-regular.ttf") format("truetype"), url("../fonts/playfair-display-v21-latin_cyrillic-regular.svg#PlayfairDisplay") format("svg");
+  /* Legacy iOS */
+}
+
+/* playfair-display-900 - latin_cyrillic */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/playfair-display-v21-latin_cyrillic-900.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/playfair-display-v21-latin_cyrillic-900.eot?#iefix") format("embedded-opentype"), url("../fonts/playfair-display-v21-latin_cyrillic-900.woff2") format("woff2"), url("../fonts/playfair-display-v21-latin_cyrillic-900.woff") format("woff"), url("../fonts/playfair-display-v21-latin_cyrillic-900.ttf") format("truetype"), url("../fonts/playfair-display-v21-latin_cyrillic-900.svg#PlayfairDisplay") format("svg");
+  /* Legacy iOS */
+}
+
+/* roboto-300 - latin_cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/roboto-v20-latin_cyrillic-300.eot");
+  /* IE9 Compat Modes */
+  src: local("Roboto Light"), local("Roboto-Light"), url("../fonts/roboto-v20-latin_cyrillic-300.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-v20-latin_cyrillic-300.woff2") format("woff2"), url("../fonts/roboto-v20-latin_cyrillic-300.woff") format("woff"), url("../fonts/roboto-v20-latin_cyrillic-300.ttf") format("truetype"), url("../fonts/roboto-v20-latin_cyrillic-300.svg#Roboto") format("svg");
+  /* Legacy iOS */
+}
+
+/* roboto-regular - latin_cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-v20-latin_cyrillic-regular.eot");
+  /* IE9 Compat Modes */
+  src: local("Roboto"), local("Roboto-Regular"), url("../fonts/roboto-v20-latin_cyrillic-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-v20-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/roboto-v20-latin_cyrillic-regular.woff") format("woff"), url("../fonts/roboto-v20-latin_cyrillic-regular.ttf") format("truetype"), url("../fonts/roboto-v20-latin_cyrillic-regular.svg#Roboto") format("svg");
+  /* Legacy iOS */
+}
+
+body {
+  background-color: #242b33;
+  color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.23;
+  letter-spacing: 0.05em;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1110px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*# sourceMappingURL=main.css.map */
