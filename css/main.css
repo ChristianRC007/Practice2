@@ -38,14 +38,25 @@
   /* Legacy iOS */
 }
 
-/* playfair-display-900 - latin_cyrillic */
+/* playfair-display-regular - latin_cyrillic */
 @font-face {
   font-family: 'Playfair Display';
   font-style: normal;
-  font-weight: 900;
-  src: url("../fonts/playfair-display-v21-latin_cyrillic-900.eot");
+  font-weight: 400;
+  src: url("../fonts/playfair-display-v21-latin_cyrillic-regular.eot");
   /* IE9 Compat Modes */
-  src: local(""), url("../fonts/playfair-display-v21-latin_cyrillic-900.eot?#iefix") format("embedded-opentype"), url("../fonts/playfair-display-v21-latin_cyrillic-900.woff2") format("woff2"), url("../fonts/playfair-display-v21-latin_cyrillic-900.woff") format("woff"), url("../fonts/playfair-display-v21-latin_cyrillic-900.ttf") format("truetype"), url("../fonts/playfair-display-v21-latin_cyrillic-900.svg#PlayfairDisplay") format("svg");
+  src: local(""), url("../fonts/playfair-display-v21-latin_cyrillic-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/playfair-display-v21-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/playfair-display-v21-latin_cyrillic-regular.woff") format("woff"), url("../fonts/playfair-display-v21-latin_cyrillic-regular.ttf") format("truetype"), url("../fonts/playfair-display-v21-latin_cyrillic-regular.svg#PlayfairDisplay") format("svg");
+  /* Legacy iOS */
+}
+
+/* playfair-display-700 - latin_cyrillic */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/playfair-display-v21-latin_cyrillic-700.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/playfair-display-v21-latin_cyrillic-700.eot?#iefix") format("embedded-opentype"), url("../fonts/playfair-display-v21-latin_cyrillic-700.woff2") format("woff2"), url("../fonts/playfair-display-v21-latin_cyrillic-700.woff") format("woff"), url("../fonts/playfair-display-v21-latin_cyrillic-700.ttf") format("truetype"), url("../fonts/playfair-display-v21-latin_cyrillic-700.svg#PlayfairDisplay") format("svg");
   /* Legacy iOS */
 }
 
@@ -81,7 +92,6 @@ body {
   background-color: #242b33;
   color: #ffffff;
   font-family: 'Raleway', sans-serif;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.23;
   letter-spacing: 0.05em;
@@ -103,6 +113,18 @@ img {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.icon {
+  fill: currentColor;
+}
+
+.header {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  right: 0;
+  width: 100%;
 }
 
 .header > .container {
@@ -170,5 +192,87 @@ img {
 
 .nav__link:hover, .nav__link:focus {
   color: #d4c17f;
+}
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+  height: 840px;
+  text-align: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(11.98%, #242b33), color-stop(51.04%, rgba(45, 52, 60, 0.38)), color-stop(92.19%, #242b33)), url(../images/hero-bg.jpg);
+  background-image: linear-gradient(180deg, #242b33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242b33 92.19%), url(../images/hero-bg.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero__inner {
+  margin-bottom: 66px;
+  max-width: 594px;
+}
+
+.hero__inner > .icon {
+  color: #d4c17f;
+}
+
+.hero__title {
+  margin-top: 0;
+  margin-bottom: 100px;
+  font-family: 'Playfair Display';
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.33;
+  text-align: center;
+  color: #d4c17f;
+}
+
+.hero__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 200px;
+}
+
+.hero__link, .hero__link--margined {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.16;
+  color: #ffffff;
+  text-decoration: none;
+  -webkit-transition: color 250ms ease-in-out;
+  transition: color 250ms ease-in-out;
+}
+
+.hero__link:hover, .hero__link--margined:hover, .hero__link:focus, .hero__link--margined:focus {
+  color: #d4c17f;
+}
+
+.hero__link:hover, .hero__link--margined:hover,
+.hero__link:focus .hero__link > .icon,
+.hero__link--margined:focus .hero__link > .icon,
+.hero__link:focus .hero__link--margined > .icon,
+.hero__link--margined:focus .hero__link--margined > .icon {
+  fill: #d4c17f;
+}
+
+.hero__link--margined {
+  margin-left: 78px;
+  margin-right: 44px;
+}
+
+.hero__link > .icon, .hero__link--margined > .icon {
+  margin-right: 15px;
 }
 /*# sourceMappingURL=main.css.map */

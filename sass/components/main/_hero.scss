@@ -1,0 +1,76 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  width: 100%;
+  height: 840px;
+
+  text-align: center;
+  background-image: linear-gradient(
+      180deg,
+      #242b33 11.98%,
+      rgba(45, 52, 60, 0.38) 51.04%,
+      #242b33 92.19%
+    ),
+    url(../images/hero-bg.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__inner {
+    margin-bottom: 66px;
+    max-width: 594px;
+  }
+
+  &__inner > .icon {
+    color: $accentColor;
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 100px;
+
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.33;
+    text-align: center;
+    color: $accentColor;
+  }
+
+  &__contacts {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 200px;
+  }
+
+  &__link {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.16;
+    color: $mainTextColor;
+    text-decoration: none;
+    transition: color 250ms $timingFunction;
+
+    &:hover,
+    &:focus {
+      color: $accentColor;
+    }
+
+    &:hover,
+    &:focus .hero__link > .icon {
+      fill: $accentColor;
+    }
+
+    &--margined {
+      @extend .hero__link;
+      margin-left: 78px;
+      margin-right: 44px;
+    }
+  }
+
+  &__link > .icon {
+    margin-right: 15px;
+  }
+}
