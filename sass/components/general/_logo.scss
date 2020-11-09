@@ -2,6 +2,11 @@
   &__link {
     text-decoration: none;
     color: $mainTextColor;
+    transition: color 250ms $timingFunction;
+
+    &:hover {
+      color: $accentColor;
+    }
   }
 
   &--top {

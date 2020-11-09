@@ -82,7 +82,7 @@
   /* Legacy iOS */
 }
 
-.nav__list {
+.nav__list, .features__list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -109,7 +109,7 @@ img {
   margin-right: auto;
 }
 
-.nav__list {
+.nav__list, .features__list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -142,6 +142,12 @@ img {
 .logo__link {
   text-decoration: none;
   color: #ffffff;
+  -webkit-transition: color 250ms ease-in-out;
+  transition: color 250ms ease-in-out;
+}
+
+.logo__link:hover {
+  color: #d4c17f;
 }
 
 .logo--top {
@@ -274,5 +280,63 @@ img {
 
 .hero__link > .icon, .hero__link--margined > .icon {
   margin-right: 15px;
+}
+
+.features {
+  padding: 120px 0;
+  background-image: url(../images/ii-image.png);
+  background-repeat: no-repeat;
+  background-position: right 280px center;
+}
+
+.features__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.features__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.features__box {
+  width: 155px;
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.35;
+  text-align: center;
+}
+
+.features__item::before {
+  content: '';
+  display: block;
+  margin-bottom: 53px;
+  height: 80px;
+  background-image: url(../images/bench.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.features__item:nth-child(2)::before {
+  background-image: url(../images/building.svg);
+}
+
+.features__item:nth-child(3)::before {
+  background-image: url(../images/fountain.svg);
+}
+
+.features__item:nth-child(4)::before {
+  background-image: url(../images/bicycle.svg);
 }
 /*# sourceMappingURL=main.css.map */

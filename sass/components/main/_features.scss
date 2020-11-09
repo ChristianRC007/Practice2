@@ -1,0 +1,55 @@
+.features {
+  padding: 120px 0;
+
+  background-image: url(../images/ii-image.png);
+  background-repeat: no-repeat;
+  background-position: right 280px center;
+
+  &__list {
+    @extend %list;
+    @include flexed(flex, center, baseline);
+
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  &__box {
+    width: 155px;
+
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.35;
+    text-align: center;
+  }
+
+  &__item::before {
+    content: '';
+    display: block;
+
+    margin-bottom: 53px;
+    height: 80px;
+
+    background-image: url(../images/bench.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &__item:nth-child(2)::before {
+    background-image: url(../images/building.svg);
+  }
+
+  &__item:nth-child(3)::before {
+    background-image: url(../images/fountain.svg);
+  }
+
+  &__item:nth-child(4)::before {
+    background-image: url(../images/bicycle.svg);
+  }
+}
