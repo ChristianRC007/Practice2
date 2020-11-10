@@ -381,5 +381,40 @@ img {
   content: '';
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(36, 43, 51, 0)), to(#242b33));
   background: linear-gradient(180deg, rgba(36, 43, 51, 0) 0%, #242b33 100%);
+  pointer-events: none;
+}
+
+.apartments__photo {
+  -webkit-transition: -webkit-transform 250ms ease-in-out;
+  transition: -webkit-transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+}
+
+.apartments__overlay-text {
+  position: absolute;
+  left: 50px;
+  bottom: 50px;
+  z-index: 1;
+  font-family: 'Raleway';
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.16;
+  color: #ffffff;
+  -webkit-transition: color 250ms ease-in-out;
+  transition: color 250ms ease-in-out;
+}
+
+.apartments__item {
+  overflow: hidden;
+}
+
+.apartments__link:hover > .apartments__photo {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.apartments__link:hover > .apartments__overlay-text {
+  color: #d4c17f;
 }
 /*# sourceMappingURL=main.css.map */
