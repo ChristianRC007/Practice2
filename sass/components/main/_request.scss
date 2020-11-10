@@ -90,5 +90,10 @@
     color: $mainTextColor;
     background-color: $accentColor;
     cursor: pointer;
+    transition: background-color 250ms $timingFunction;
+
+    &:hover {
+      background-color: #8a7c49;
+    }
   }
 }
