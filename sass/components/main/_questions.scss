@@ -1,0 +1,27 @@
+.questions {
+  padding-bottom: 180px;
+
+  &__title {
+    @extend .request__title;
+
+    margin-bottom: 45px;
+  }
+
+  &__form {
+    @include flexed(flex, space-between, center);
+  }
+
+  &__warning {
+    @extend .request__warning;
+  }
+
+  &__input {
+    @extend .request__input;
+
+    margin-bottom: 0;
+  }
+
+  &__btn {
+    @extend .request__btn;
+  }
+}
