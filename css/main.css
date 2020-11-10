@@ -346,7 +346,7 @@ img {
   background-position: left 180px top 90px;
 }
 
-.apartments__title {
+.apartments__title, .request__title {
   margin-bottom: 100px;
   font-family: 'Playfair Display';
   font-weight: 700;
@@ -416,5 +416,132 @@ img {
 
 .apartments__link:hover > .apartments__overlay-text {
   color: #d4c17f;
+}
+
+.request > .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.request {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: unset;
+      -ms-flex-pack: unset;
+          justify-content: unset;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 560px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(10.42%, #242b33), color-stop(50.52%, rgba(36, 43, 51, 0)), color-stop(90.1%, #242b33)), -webkit-gradient(linear, left bottom, left top, from(rgba(36, 43, 51, 0.9)), to(rgba(36, 43, 51, 0.9))), url(../images/secong-bg.jpg);
+  background: linear-gradient(180deg, #242b33 10.42%, rgba(36, 43, 51, 0) 50.52%, #242b33 90.1%), linear-gradient(0deg, rgba(36, 43, 51, 0.9), rgba(36, 43, 51, 0.9)), url(../images/secong-bg.jpg);
+}
+
+.request__info {
+  margin-right: 30px;
+  width: calc((100% / 12) * 6);
+}
+
+.request__title {
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.request__text {
+  margin: 0;
+  font-family: 'Raleway';
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.request__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: calc((100% / 12) * 6);
+}
+
+.request__input {
+  margin-bottom: 35px;
+  width: 255px;
+  height: 50px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.93;
+  border: none;
+  color: #bebebe;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.request__input::-webkit-input-placeholder {
+  color: #bebebe;
+  font-size: 14px;
+}
+
+.request__input:-ms-input-placeholder {
+  color: #bebebe;
+  font-size: 14px;
+}
+
+.request__input::-ms-input-placeholder {
+  color: #bebebe;
+  font-size: 14px;
+}
+
+.request__input::placeholder {
+  color: #bebebe;
+  font-size: 14px;
+}
+
+.request__warning {
+  margin: 0;
+  width: 255px;
+  height: 28px;
+  font-family: 'Raleway';
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.23;
+  text-align: center;
+  color: #e7e7e7;
+}
+
+.request__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+  width: 255px;
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.69;
+  border: none;
+  color: #ffffff;
+  background-color: #d4c17f;
+  cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */
