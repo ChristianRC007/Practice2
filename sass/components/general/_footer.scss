@@ -1,0 +1,26 @@
+.footer > .container {
+  @include flexed(flex, space-between, baseline);
+}
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 50px;
+
+  background-color: $secondaryBgColor;
+
+  &__list {
+    @include flexed(flex, unset, unset);
+    @extend %list;
+
+    flex-direction: column;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+  &__link {
+    @extend .nav__link;
+    padding: 0;
+  }
+}

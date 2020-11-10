@@ -1,0 +1,18 @@
+.address {
+  &__info {
+    margin-bottom: 15px;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.05em;
+  }
+
+  &__link {
+    font-weight: 700;
+    text-decoration: none;
+    color: $accentColor;
+  }
+}

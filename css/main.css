@@ -82,7 +82,7 @@
   /* Legacy iOS */
 }
 
-.nav__list, .features__list, .apartments__list {
+.nav__list, .footer__list, .social, .features__list, .apartments__list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -109,7 +109,7 @@ img {
   margin-right: auto;
 }
 
-.nav__list, .features__list, .apartments__list {
+.nav__list, .footer__list, .social, .features__list, .apartments__list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -183,7 +183,7 @@ img {
   margin-right: 40px;
 }
 
-.nav__link {
+.nav__link, .footer__link {
   padding: 17px 0;
   font-family: 'Raleway';
   font-weight: 400;
@@ -196,7 +196,91 @@ img {
   transition: color 250ms ease-in-out;
 }
 
-.nav__link:hover, .nav__link:focus {
+.nav__link:hover, .footer__link:hover, .nav__link:focus, .footer__link:focus {
+  color: #d4c17f;
+}
+
+.footer > .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 50px;
+  background-color: #2d343c;
+}
+
+.footer__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: unset;
+      -ms-flex-pack: unset;
+          justify-content: unset;
+  -webkit-box-align: unset;
+      -ms-flex-align: unset;
+          align-items: unset;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer__item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.footer__link {
+  padding: 0;
+}
+
+.address__info {
+  margin-bottom: 15px;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.05em;
+}
+
+.address__link {
+  font-weight: 700;
+  text-decoration: none;
+  color: #d4c17f;
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: unset;
+      -ms-flex-pack: unset;
+          justify-content: unset;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social__item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.social__link {
+  color: #ffffff;
+  -webkit-transition: color 250ms ease-in-out;
+  transition: color 250ms ease-in-out;
+}
+
+.social__link:hover {
   color: #d4c17f;
 }
 
